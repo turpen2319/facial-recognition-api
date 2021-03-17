@@ -53,6 +53,8 @@ app.put('/imageurl', (req, res) => { imageScore.handleApiCall(req, res)})
 // const PORT = process.env.PORT; //this is an environmental variable...used for
 //                                  keeping things dynamic or secret. When we deploy
 //																	 we don't know what port it will run on
+
+// declare env variables in terminal using bash    PORT=3000 node server.js
 const PORT = 3001;
 app.listen(PORT, ()=> {
 	console.log(`Server is running on port ${PORT}`);
