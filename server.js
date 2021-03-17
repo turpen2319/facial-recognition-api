@@ -11,7 +11,7 @@ const imageScore = require('./controllers/image-score');
 const db = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
+    host : 'postgresql-rugged-31331',
     user : 'postgres',
     password : 'dbII2',
     database : 'smartbrain'
