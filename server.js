@@ -16,7 +16,6 @@ const db = knex({
   }
 });
 
-db.connect();
 
 
 //prints all data from the db 
