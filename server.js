@@ -11,10 +11,9 @@ const imageScore = require('./controllers/image-score');
 const db = knex({
   client: 'pg',
   connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false
-  }
+  ssl: true,
 });
+
 
 //prints all data from the db 
 // db.select('*').from('users').then(data => {
