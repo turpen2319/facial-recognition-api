@@ -50,7 +50,7 @@ app.get('/profile/:id', (req, res) => { profile.handleProfile(req, res, db)})
 
 app.put('/image-score', (req, res) => { imageScore.handleScore(req, res, db)})
 
-app.put('/imageurl', (req, res) => { imageScore.handleApiCall(req, res)})
+app.post('/imageurl', (req, res) => { imageScore.handleApiCall(req, res)})
 
 // const PORT = process.env.PORT; //this is an environmental variable...used for
 //                                  keeping things dynamic or secret. When we deploy
