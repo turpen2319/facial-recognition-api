@@ -11,7 +11,7 @@ const handleApiCall = (req, res) => {
 		.then(data => {
 			res.json(data);
 		})
-		.catch(err => res.status(400).json(req.body.input))
+		.catch(err => res.status(400).json("couln't work with api"))
 }
 
 const handleScore = (req, res, db) => {
