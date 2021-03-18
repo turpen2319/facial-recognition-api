@@ -26,5 +26,6 @@ const handleScore = (req, res, db) => {
 }
 
 module.exports = {
-	handleScore: handleScore
+	handleScore: handleScore,
+	handleApiCall: handleApiCall
 };
