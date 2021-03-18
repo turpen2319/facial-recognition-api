@@ -6,6 +6,7 @@ const app = new Clarifai.App({
 });
 
 const handleApiCall = (req, res) => {
+	console.log("server: ", req.body.input);
 	app.models
 		.predict(Clarifai.FACE_DETECT_MODEL, req.body.input) //using imageUrl wouldn't have worked...see setState() react docs 
 		.then(data => {
